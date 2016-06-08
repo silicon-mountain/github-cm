@@ -10,7 +10,7 @@ import copy
 import requests
 from requests.auth import HTTPBasicAuth
 
-from africa_data import countries
+from africaData import countries
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.DEBUG)
@@ -18,22 +18,22 @@ logging.basicConfig(level=logging.DEBUG)
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
 
 output = 'step1.json'
-one_minute = 60
-one_hour = one_minute * 60
-min_remaining_tostop = 30
+oneMinute = 60
+oneHour = oneMinute * 60
+minRemainingToStop = 30
 reqs = 0
-reqs_limit = None
-reqs_remaining = None
+reqsLimit = None
+reqsRemaining = None
 headers = {}
 TOKEN_AUTH = HTTPBasicAuth(GITHUB_TOKEN, "x-oauth-basic")
 
 
-all_users = []
+allUsers = []
 
 
-def add_to(search_term, all_users, country_stub, city=None):
+def addTo(searchTerm, allUsers, countryStub, city=None):
 
-    def users_from(location):
+    def usersFrom(location):
         complete = False
         page = 1
         users = []
@@ -67,37 +67,37 @@ def add_to(search_term, all_users, country_stub, city=None):
 
         return users
 
-    json_users = users_from(search_term)
+    jsonUsers = usersFrom(searchTerm)
 
-    if not len(json_users):
+    if not len(jsonUsers):
         return
 
-    for user in json_users:
+    for user in jsonUsers:
         logger.info("FOUND -- %s -- %s" % (user.get('username'),
                                            user.get('location')))
-        user.update({'country': country_stub,
+        user.update({'country': countryStub,
                      'city': city})
-        all_users.append(user)
+        allUsers.append(user)
 
-for country_code, country in countries.items():
+for countryCode, country in countries.items():
     logger.info("COUNTRY: %s" % country.get('name'))
 
-    country_stub = copy.copy(country)
-    country_stub.update({'code': country_code})
-    del(country_stub['patterns'])
+    countryStub = copy.copy(country)
+    countryStub.update({'code': countryCode})
+    del(countryStub['patterns'])
 
     for city in country.get('patterns', []):
         logging.info("SEARCHING for city -- %s" % city.get('name'))
-        for search_name in city.get('patterns', [city.get('name')]):
-            add_to(search_name, all_users, country_stub, city)
+        for searchName in city.get('patterns', [city.get('name')]):
+            addTo(searchName, allUsers, countryStub, city)
 
     for name in country.get('names', []):
         logging.info("SEARCHING for country -- %s" % name)
-        add_to(name, all_users, country_stub, None)
+        addTo(name, allUsers, countryStub, None)
 
-logger.info("Found %d records" % len(all_users))
+logger.info("Found %d records" % len(allUsers))
 
-json.dump(all_users, open(output, 'w'), indent=4)
+json.dump(allUsers, open(output, 'w'), indent=4)
 
 logger.info("UNIQUE user accounts: %d" %
-            len(list(set([u.get('username') for u in all_users]))))
+            len(list(set([u.get('username') for u in allUsers]))))
