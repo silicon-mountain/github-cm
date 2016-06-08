@@ -1,34 +1,57 @@
 GitHub Africa
 =============
 
-Project to help highlight GitHub usage in Africa
+This project highlights GitHub usage in Africa. This project is based on the [CodeAfrica](http://codeafrica.org) initiative and it's updated and deployed to http://smconf.org/github-africa. Using GitHub's API it searchers for user's who had an African country or city listed in their profile.  This is obviously an imperfect method but does help illustrate where GitHub usage in Africa is occuring.  We feel this provides a good proxy where opensource and modern software practices is growing in Africa. 
 
-Methodology
------------
+These scripts will generate [github-africa](https://github.com/silicon-mountain/github-users-africa/blob/master/github-users.csv) list. We use this to generate a Map with [MapBox](http://mapbox.com) and deployed to [Silicon Mountain site](http://smconf.org/github-africa)
 
-Using GitHub API's we searched for all GitHub user's who had an African country or city listed in their profile.  This is obviously an imperfect method but does help illustrate where GitHub usage in Africa is occuring.  We feel this provides a good proxy where opensource and modern software practices is growing in Africa. 
+Feel free to check out the [license](LICENSE), and make contributions by pull requests.
 
-These scripts in this repo where used to generate the [github-africa-users](https://github.com/codeafrica/github-africa/blob/master/data/github-africa-users-20141231.csv) list.  We used this data to create the GitHub Africa User's Map at: [codeafrica.org](http://codeafrica.org)
 
-About
+## Build Instructions
+
+### Prerequisites
+
+Install pip, python, mapbox-studio on your Linux/Mac OS distro
+
+```
+$ dnf install python pip | apt-get install python pip | brew install python pip
+
+```
+### Build
+
 -----
+Create virtualenv and install pip.
 
-This is part of the [CodeAfrica](http://codeafrica.org) initiative supported by [Ona](http://company.ona.io) and [Yeleman](http://yeleman.com) - software companies building world class open source software in Nairobi, Kenya and Bamako, Mali.  
+```
+$ pip install -r requirements.pip
 
-Usage
------
+````
 
-* Create a virtualenv and `pip install -r requirements.pip` inside.
-* Copy `secret.py.example` to `secret.py`
+* Create  `secret.py` based on your GitHub details.
 * Edit `secret.py` with a `clientID` and `secretID` from your github profile/auth page
 * Add your username and password (in clear) to `secret.py`
-* Launch `./auth.py` and export the `GITHUB_TOKEN` variable as suggested.
-* You can now clear/remove `secret.py`
-* Launch `step1_search_by_location.py`
-* Launch `step2_cleanup_users.py`
-* Launch `step3_extend_users.py`
-* Launch `step4_cleanup_dates.py`
-* Launch `step5_export_for_map.py`
 
-Main per-user data is located in `step4.json`.
-The Step5 creates a CSV file usable with Mapbox Studio to create a simple map based on number of users per country/city.
+```
+$ ./auth.py
+
+```
+export the `GITHUB_TOKEN` as suggested.
+remove `secret.py`
+
+
+*Run the following python scripts.
+
+```
+$ ./step1_search_by_location.py && ./step2_cleanup_users.py && ./step3_extend_users.py && ./step4_cleanup_dates.py && ./step5_export_for_map.py
+
+```
+
+This generates the github-users.csv
+
+
+## License
+
+github-users-africa is licensed under [The Apache-2 License](LICENSE).
+
+
