@@ -40,7 +40,7 @@ export the `GITHUB_TOKEN` as suggested.
 remove `secret.py`
 
 
-*Run the following python scripts.
+* Run the following python scripts.
 
 ```
 $ ./step1_search_by_location.py && ./step2_cleanup_users.py && ./step3_extend_users.py && ./step4_cleanup_dates.py && ./step5_export_for_map.py
