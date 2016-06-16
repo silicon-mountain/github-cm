@@ -1,11 +1,11 @@
 GitHub Africa
 =============
 
-This project highlights GitHub usage in Africa. This project is based on the [CodeAfrica](http://codeafrica.org) initiative and it's updated and deployed to [Silicon Mountain](http://smconf.org/github-africa) site. Using GitHub's API it searchers for user's who had an African country or city listed in their profile.  This is obviously an imperfect method but does help illustrate where GitHub usage in Africa is occuring.  We feel this provides a good proxy where opensource and modern software practices is growing in Africa. 
+This project highlights the usage of GitHub in Africa. It is based on the [CodeAfrica](http://codeafrica.org) initiative and it's updated and deployed to the [Silicon Mountain](http://smconf.org/github-africa) site. Using GitHub's API it searches for users who have an African country or city listed in their profile. This is an imperfect method but it does help illustrate the occurance of GitHub in Africa.  We feel that this provides a good proxy about where opensource and modern software practices is growing in Africa. 
 
 These scripts will generate [github-africa](https://github.com/silicon-mountain/github-users-africa/blob/master/github-users.csv) list. We use this to generate a Map with [MapBox](http://mapbox.com) and deployed to [Silicon Mountain site](http://smconf.org/github-africa)
 
-Feel free to check out the [license](LICENSE), and make contributions by pull requests.
+Feel free to check out the [license](LICENSE), and make contributions through pull requests.
 
 
 ## Build Instructions
