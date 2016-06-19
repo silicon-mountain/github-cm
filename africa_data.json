@@ -625,6 +625,35 @@
         "longitude": 10.1666667
       },
       {
+      	"latitude": 4.1482 ,
+      	"name": "Buea",
+      	"longitude": 9.2453
+      },
+      { "latitude": 4.0225,
+      	"name": "Limbe",
+      	"longitude": 9.1954
+      },
+      {
+      	"latitude": 4.6333,
+      	"name": "Kumba",
+      	"longitude": 9.4450
+      },
+      {
+      	"latitude": 5.99256,
+      	"name": "Bambili",
+      	"longitude": 10.25572
+      },
+      {
+        "latitude": 10.5955556,
+        "name": "Maroua",
+        "longitude": 14.3247222
+      },
+      {
+      	"latitude": 6.2245,
+      	"name": "Kumbo",
+      	"longitude": 10.6760
+      },
+      {
         "latitude": 10.5955556,
         "name": "Maroua",
         "longitude": 14.3247222
@@ -3009,3 +3038,4 @@
     ]
   }
 }
+
