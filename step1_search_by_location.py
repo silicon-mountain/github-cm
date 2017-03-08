@@ -8,10 +8,12 @@ import logging
 import copy
 
 import requests
+
+
 from requests.auth import HTTPBasicAuth
 
-from africaData import countries
 
+countries = json.load(open('africa_data.json'))
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.DEBUG)
 
