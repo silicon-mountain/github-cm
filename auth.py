@@ -18,7 +18,7 @@ payload = {
     "scopes": [
         "public_repo"
     ],
-    "note": "codeafrica script",
+    "note": "GitHub Africa Stats",
     "client_id": CLIENT_ID,
     "client_secret": CLIENT_SECRET
 }
