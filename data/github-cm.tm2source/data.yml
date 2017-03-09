@@ -1,0 +1,32 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: ch3ck.478da1fd
+  rev: s-ec2a4ae6
+  saveCenter: true
+attribution: Heat Map
+center: 
+  - 11.9971
+  - 7.2971
+  - 6
+description: GitHub Usage in Cameroon
+Layer: 
+  - id: github-users
+    Datasource: 
+      file: /home/localhost/Documents/Dev/play/github-users-africa/github-users.csv
+      type: csv
+    description: GitHub Activity in Cameroon
+    fields: 
+      city: String
+      country_code: String
+      country_name: String
+      latitude: Number
+      longitude: Number
+      nb_users: Number
+      percent: Number
+    properties: 
+      "buffer-size": 34
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 14
+minzoom: 1
+name: GitHub Cameroon

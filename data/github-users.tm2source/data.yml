@@ -1,0 +1,32 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: ch3ck.7341d386
+  rev: s-3185c464
+  saveCenter: true
+attribution: ''
+center: 
+  - 11.7601
+  - 7.2437
+  - 6
+description: ''
+Layer: 
+  - id: github-users
+    Datasource: 
+      file: /home/localhost/Documents/Dev/play/github-users-africa/github-users.csv
+      type: csv
+    description: GitHub Users Cameroon
+    fields: 
+      city: City Name
+      country_code: Country code
+      country_name: Country name
+      latitude: longitude
+      longitude: latitude
+      nb_users: number of users
+      percent: percentage
+    properties: 
+      "buffer-size": 40
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 6
+minzoom: 0
+name: ''

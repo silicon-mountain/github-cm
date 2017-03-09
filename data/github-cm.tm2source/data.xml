@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+<Parameters>
+  <Parameter name="attribution"><![CDATA[Heat Map]]></Parameter>
+  <Parameter name="center">11.9971,7.2971,6</Parameter>
+  <Parameter name="description"><![CDATA[GitHub Usage in Cameroon]]></Parameter>
+  <Parameter name="format">pbf</Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"github-users","description":"GitHub Activity in Cameroon","fields":{"country_code":"String","country_name":"String","city":"String","latitude":"Number","longitude":"Number","nb_users":"Number","percent":"Number"}}]}]]></Parameter>
+  <Parameter name="maxzoom">14</Parameter>
+  <Parameter name="minzoom">1</Parameter>
+  <Parameter name="name"><![CDATA[GitHub Cameroon]]></Parameter>
+</Parameters>
+
+
+<Layer name="github-users"
+  buffer-size="34"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/home/localhost/Documents/Dev/play/github-users-africa/github-users.csv]]></Parameter>
+       <Parameter name="type"><![CDATA[csv]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>

@@ -1,0 +1,25 @@
+_prefs: 
+  mapid: ''
+  saveCenter: true
+_properties: {}
+attribution: ''
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - 27.0703
+  - -70.931
+  - 2
+description: ''
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 6
+minzoom: 0
+name: ''
+source: "tmsource:///home/localhost/Documents/Dev/play/github-users-africa/data/github-users.tm2source"
+styles: 
+  - style.mss
+template: ''
