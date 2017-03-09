@@ -1,0 +1,311 @@
+[
+  {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "country_code": "CM",
+          "country_name": "Cameroon",
+          "city": "",
+          "latitude": "4.0502778",
+          "longitude": "9.7",
+          "nb_users": "545",
+          "percent": "100"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            9.7,
+            4.0502778
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country_code": "CM",
+          "country_name": "Cameroon",
+          "city": "Dschang",
+          "latitude": "5.4459",
+          "longitude": "10.0472",
+          "nb_users": "8",
+          "percent": "001.4678899082568808"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            10.0472,
+            5.4459
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country_code": "CM",
+          "country_name": "Cameroon",
+          "city": "Bandjoun",
+          "latitude": "5.3674",
+          "longitude": "10.4172",
+          "nb_users": "2",
+          "percent": "000.3669724770642202"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            10.4172,
+            5.3674
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country_code": "CM",
+          "country_name": "Cameroon",
+          "city": "Garoua",
+          "latitude": "9.3",
+          "longitude": "13.4",
+          "nb_users": "1",
+          "percent": "000.1834862385321101"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            13.4,
+            9.3
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country_code": "CM",
+          "country_name": "Cameroon",
+          "city": "Ngaoundéré",
+          "latitude": "7.3166667",
+          "longitude": "13.5833333",
+          "nb_users": "1",
+          "percent": "000.1834862385321101"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            13.5833333,
+            7.3166667
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country_code": "CM",
+          "country_name": "Cameroon",
+          "city": "Bafoussam",
+          "latitude": "5.4666667",
+          "longitude": "10.4166667",
+          "nb_users": "5",
+          "percent": "000.9174311926605505"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            10.4166667,
+            5.4666667
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country_code": "CM",
+          "country_name": "Cameroon",
+          "city": "Maroua",
+          "latitude": "10.5955556",
+          "longitude": "14.3247222",
+          "nb_users": "6",
+          "percent": "001.1009174311926606"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            14.3247222,
+            10.5955556
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country_code": "CM",
+          "country_name": "Cameroon",
+          "city": "Buea",
+          "latitude": "4.1482",
+          "longitude": "9.2453",
+          "nb_users": "97",
+          "percent": "017.79816513761468"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            9.2453,
+            4.1482
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country_code": "CM",
+          "country_name": "Cameroon",
+          "city": "Yaounde",
+          "latitude": "3.8666667",
+          "longitude": "11.5166667",
+          "nb_users": "45",
+          "percent": "008.256880733944955"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            11.5166667,
+            3.8666667
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country_code": "CM",
+          "country_name": "Cameroon",
+          "city": "Limbe",
+          "latitude": "4.0225",
+          "longitude": "9.1954",
+          "nb_users": "5",
+          "percent": "000.9174311926605505"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            9.1954,
+            4.0225
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country_code": "CM",
+          "country_name": "Cameroon",
+          "city": "Douala",
+          "latitude": "4.0502778",
+          "longitude": "9.7",
+          "nb_users": "131",
+          "percent": "024.036697247706423"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            9.7,
+            4.0502778
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country_code": "CM",
+          "country_name": "Cameroon",
+          "city": "Kumba",
+          "latitude": "4.6333",
+          "longitude": "9.445",
+          "nb_users": "1",
+          "percent": "000.1834862385321101"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            9.445,
+            4.6333
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country_code": "CM",
+          "country_name": "Cameroon",
+          "city": "Bertoua",
+          "latitude": "4.5833333",
+          "longitude": "13.6833333",
+          "nb_users": "1",
+          "percent": "000.1834862385321101"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            13.6833333,
+            4.5833333
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country_code": "CM",
+          "country_name": "Cameroon",
+          "city": "Bamenda",
+          "latitude": "5.9333333",
+          "longitude": "10.1666667",
+          "nb_users": "28",
+          "percent": "005.137614678899083"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            10.1666667,
+            5.9333333
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country_code": "CM",
+          "country_name": "Cameroon",
+          "city": "Yaoundé",
+          "latitude": "3.8666667",
+          "longitude": "11.5166667",
+          "nb_users": "63",
+          "percent": "011.559633027522936"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            11.5166667,
+            3.8666667
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country_code": "CM",
+          "country_name": "Cameroon",
+          "city": "Bambili",
+          "latitude": "5.99256",
+          "longitude": "10.25572",
+          "nb_users": "3",
+          "percent": "000.5504587155963303"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            10.25572,
+            5.99256
+          ]
+        }
+      }
+    ]
+  }
+]
