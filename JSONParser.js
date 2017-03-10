@@ -1,22 +1,25 @@
 
 const fs = require('fs');
-const userDataObject = JSON.parse(fs.readFileSync('step2.json').toString());
+const userDataObject = JSON.parse(fs.readFileSync('sortedUserData.json').toString());
 var i = 1;
 
-function BuildProfileUsingData(index, username, fullname, repos, location, followers) {
+function BuildProfileUsingData(index, username, fullname, repos, location, followers, avatar) {
 	var github = 'https://github.com/';
-	var appender = "<tr><th scope='row'> #" + index + "</th><td><a href='" + github + username + "'>" + fullname + "</a></td><td>" + repos + "</td><td>" + location + "</td><td>" + followers + "<td></tr>";
+	location = (location == null) ? userDataObject[index].country_name : location;
+	fullname = (fullname == '') ? userDataObject[index].username : fullname;
+	var appender = "|" + index + "|[" + fullname + "](" + github + username + ") |" + repos + "|" + location + "|" + followers + "| ![profile_img](" + avatar + ") |";
 	return appender;
 }
 
 for (var i in userDataObject) {
-	fs.appendFileSync('userdata.md', BuildProfileUsingData(
-		i, 
-		userDataObject[i].username, 
+	fs.appendFileSync('users.md', BuildProfileUsingData(
+		i,
+		userDataObject[i].username,
 		userDataObject[i].fullname,
 		userDataObject[i].repos,
-		userDataObject[i].location,
-		userDataObject[i].followers
-		) + '\n');
+		userDataObject[i].city_name,
+		userDataObject[i].followers,
+		userDataObject[i].avatar_url
+	) + '\n');
 }
-fs.appendFileSync('userdata.md', '</tbody></table>');
+fs.appendFileSync('users.md', '\n<link rel="stylesheet" href="style.css" />\n');

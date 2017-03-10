@@ -50,6 +50,48 @@ $ ./step1_search_by_location.py && ./step2_cleanup_users.py && ./step3_extend_us
 This generates the github-users.csv
 
 
+### Render output as markdown
+
+------------
+
+Install Node.js and Node Package Manager
+``` shell
+$ sudo apt install nodejs
+$ sudo apt install npm
+
+```
+#### Sort the JSON file
+
+Modify `sortJSON` and change the sort parameter if necessary
+
+``` javascript
+	var dataFile = JSON.parse(fs.readFileSync('step4.json'));
+	....
+
+	dataFile = sortUsersBy('repos', dataFile);
+	fs.appendFileSync('sortedUserData.json', JSON.stringify(dataFile));
+```
+`repos` can be modified to any key that exit in the JSON file.  
+`datafile` string object that holds the formated data.
+
+Run `node sortJSON` to produce a sorted JSON file using `repos` as key.  
+The output JSON file `sortedUserData.json`, can then be formated with any [JSON formatter](http://www.freeformatter.com/json-formatter.html)
+
+### Build a markdown from `sortedUserData.json`
+
+The parameters in the `BuildProfileUsingData()` function can be modified eg.
+
+``` javascript
+	const userDataObject = JSON.parse(fs.readFileSync('sortedUserData.json').toString());
+	...
+
+	function BuildProfileUsingData(index, username, fullname, repos, location, followers, avatar) {...}
+```
+`index` auto counter  
+`username` a key in the JSON file (eg `userDataObject[index].username`)  
+`fullname, repos ...` keys in JSON file    
+
+Run `node JSONParser`. This outputs the file `users.md`
 ## License
 
 github-cm is licensed under [The Apache-2 License](LICENSE).
